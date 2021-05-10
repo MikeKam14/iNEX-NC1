@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainLaunchScene" id="BYZ-38-t0r" customClass="MainViewController" customModule="iNEX_Nano_One" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenGradientBackground" translatesAutoresizingMaskIntoConstraints="NO" id="y67-Go-13p">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iNEX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSi-SF-1KH">
+                                <rect key="frame" x="152" y="471" width="86" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iNEX is an Income-Expense Tracker to help manage money intuitively " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCJ-e7-wq5">
+                                <rect key="frame" x="60" y="525" width="270" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITo-Sc-hui">
+                                <rect key="frame" x="27" y="710" width="337" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.22352941176470587" green="0.0" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="getStartedPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TFV-QX-cgl"/>
+                                    <segue destination="hUw-2h-sqR" kind="presentation" identifier="goToPersonalInformation" modalPresentationStyle="fullScreen" id="wHb-ba-hXQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y67-Go-13p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7Ji-1j-aJM"/>
+                            <constraint firstItem="y67-Go-13p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Img-lL-jBG"/>
+                            <constraint firstAttribute="bottom" secondItem="y67-Go-13p" secondAttribute="bottom" id="rbs-Mq-Q54"/>
+                            <constraint firstItem="y67-Go-13p" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="uvb-xH-tz9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="s2w-EW-QL1"/>
+                    <connections>
+                        <outlet property="getStarted" destination="ITo-Sc-hui" id="8jc-cw-ytD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730.76923076923072" y="112.32227488151658"/>
+        </scene>
+        <!--navigationPersonal-->
+        <scene sceneID="vW8-zF-Qm0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PersonalInfo" referencedIdentifier="navigationPersonal" id="hUw-2h-sqR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="pMT-Za-bhd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ME9-wP-nPf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198" y="492"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="greenGradientBackground" width="1000" height="1000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
