@@ -22,7 +22,7 @@
 --> Please build and run the project on iPhone 12 (not Pro, Mini, or Max) because the project does not use any Auto Layout features. Using other phone will result in size constraints to differ.
 --> Please fill the UEQ for the first time, where the first one covers your EXPECTATIONS about the app after reading the app's description.
 --> After testing through the app, fill the UEQ for the second time, where the second one covers your ACTUAL EXPERIENCE (PERFORMANCE) of using the app.
---> Link for the questionnaire: https://docs.google.com/forms/d/1SxPgzaotxcskADzZw_jwoOB2s3Qe78bnEE4Zqt6guCc/edit
+--> Link for the questionnaire: https://docs.google.com/forms/d/e/1FAIpQLSf-hhCPKpflIqXPp046YdRhUpaLKzRUQcwIFyMf5Zjm252OAA/viewform?usp=sf_link
 
 
 ### Reason for twice feedback
