@@ -110,13 +110,20 @@ class TransactionViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        if moneyInPicker.text == "" {
+            let alertController = UIAlertController(title: "Money is empty", message: "Please fill money amount", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+        }
+    }
     
     @IBAction func onChangeSegmented(_ sender: Any) {
         detailsTableViewTrx.reloadData()  //ini biar kalau dipencet segmentednya, tablenya langsung berubah view
     }
 }
 
-//MARK: Extension Protocol untuk nerima data
+//MARK: - Extension Protocol untuk nerima data
 
 extension TransactionViewController: receiveData, receiveDataIncome {
     
@@ -145,7 +152,7 @@ extension TransactionViewController: receiveData, receiveDataIncome {
 }
 
 
-//MARK: Extension TableView
+//MARK: - Extension TableView
 
 extension TransactionViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

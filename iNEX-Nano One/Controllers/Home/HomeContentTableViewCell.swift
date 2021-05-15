@@ -35,7 +35,7 @@ class HomeContentTableViewCell: UITableViewCell {
             
             financeType.text = financeCell.type
             dateLabel.text = formatter.string(from: financeCell.date as! Date)
-            costLabel.text = String(financeCell.cost ?? 0)
+            costLabel.text = String((financeCell.cost ?? 0).formattedWithSeparator)
             symbolType.image = UIImage(named: financeCell.symbol ?? "positive")
         }
     }

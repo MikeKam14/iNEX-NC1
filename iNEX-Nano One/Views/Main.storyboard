@@ -155,16 +155,16 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KxZ-M8-Wpr">
-                                                    <rect key="frame" x="209" y="14.999999999999998" width="21.666666666666657" height="20.333333333333329"/>
+                                                    <rect key="frame" x="206.33333333333334" y="14.999999999999998" width="21.666666666666657" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="h3j-Z2-7qS" firstAttribute="leading" secondItem="KxZ-M8-Wpr" secondAttribute="trailing" constant="80" id="O2c-tw-Ld0"/>
                                                 <constraint firstItem="h3j-Z2-7qS" firstAttribute="centerY" secondItem="eeS-PK-RUC" secondAttribute="centerY" id="REs-fb-AX1"/>
                                                 <constraint firstItem="KxZ-M8-Wpr" firstAttribute="centerY" secondItem="eeS-PK-RUC" secondAttribute="centerY" id="h9x-wJ-I4l"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="KxZ-M8-Wpr" secondAttribute="trailing" constant="110" id="nQ3-dj-CWH"/>
                                                 <constraint firstAttribute="trailing" secondItem="h3j-Z2-7qS" secondAttribute="trailing" constant="10" id="qwg-YM-6js"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -364,6 +364,7 @@
                     <navigationItem key="navigationItem" title="Add Transaction" id="KRG-e5-ug5">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="t40-no-Ulb">
                             <connections>
+                                <action selector="saveButtonPressed:" destination="ITw-gU-Whh" id="k7W-k9-lhC"/>
                                 <segue destination="qML-sL-w6y" kind="unwind" identifier="saveTrxToHome" unwindAction="saveToHomeTableView:" id="G6o-fD-uEk"/>
                             </connections>
                         </barButtonItem>
@@ -529,7 +530,7 @@
                                         <rect key="frame" x="0.0" y="124.33333396911621" width="354" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b6S-c4-gMh" id="smN-H7-1f3">
-                                            <rect key="frame" x="0.0" y="0.0" width="324.33333333333331" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="336.33333333333331" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PIN Unlock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdU-dN-XpC">

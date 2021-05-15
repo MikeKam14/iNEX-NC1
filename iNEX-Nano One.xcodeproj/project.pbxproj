@@ -12,6 +12,7 @@
 		9D015D01263C0CEC0092457F /* iNEX_Nano_One.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D015CFF263C0CEC0092457F /* iNEX_Nano_One.xcdatamodeld */; };
 		9D015D03263C0CED0092457F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D015D02263C0CED0092457F /* Assets.xcassets */; };
 		9D015D15263C0E6F0092457F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D015D14263C0E6F0092457F /* MainViewController.swift */; };
+		9D346755264F979800E5CF1B /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D346754264F979800E5CF1B /* CurrencyFormatter.swift */; };
 		9D3A59602640EE5A00F3AEC8 /* FinancesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A595F2640EE5A00F3AEC8 /* FinancesListView.swift */; };
 		9D3A59642640EFE200F3AEC8 /* FinanceDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A59632640EFE200F3AEC8 /* FinanceDataSource.swift */; };
 		9D3A59692641068500F3AEC8 /* HomeContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A59682641068500F3AEC8 /* HomeContentTableViewCell.swift */; };
@@ -46,6 +47,7 @@
 		9D015D02263C0CED0092457F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D015D07263C0CED0092457F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D015D14263C0E6F0092457F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9D346754264F979800E5CF1B /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		9D389B9926492EDB00C2B134 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "iNEX-Nano One/README.md"; sourceTree = "<group>"; };
 		9D3A595F2640EE5A00F3AEC8 /* FinancesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancesListView.swift; sourceTree = "<group>"; };
 		9D3A59632640EFE200F3AEC8 /* FinanceDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceDataSource.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				9D6A593C263EF25C00FCBC1D /* DetailsDataTrx.swift */,
 				9DC63928263EFAB100CF24D0 /* NameDefaults.swift */,
 				9D3A595F2640EE5A00F3AEC8 /* FinancesListView.swift */,
+				9D346754264F979800E5CF1B /* CurrencyFormatter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DAE47AE263E7FB00062841B /* CategoryModel.swift in Sources */,
+				9D346755264F979800E5CF1B /* CurrencyFormatter.swift in Sources */,
 				9D71187E263D5EB200A802BD /* ReportsViewController.swift in Sources */,
 				9DAE47A8263E7E850062841B /* CategoriesViewController.swift in Sources */,
 				9D015CF7263C0CEC0092457F /* AppDelegate.swift in Sources */,

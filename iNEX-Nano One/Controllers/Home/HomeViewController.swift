@@ -54,7 +54,7 @@ class HomeViewController: UIViewController {
         
         nameLabel.text = passedName //(gagal, labelnya jadi ga ada. ini pake metode prepare for segue)
         
-        initialBalance.text = String(passedBalance)
+        initialBalance.text = String(passedBalance.formattedWithSeparator)
         balanceStatement = passedBalance
         
      //   nameLabel.text = namaGuaDisini.getName() // ini manggil si userdefault
@@ -87,9 +87,9 @@ class HomeViewController: UIViewController {
     }
     
     func updateBalanceUI() {
-        incomeSumLabel.text = String(totalIncome)
-        expenseSumLabel.text = String(totalExpense)
-        initialBalance.text = String(balanceStatement)
+        incomeSumLabel.text = String(totalIncome.formattedWithSeparator)
+        expenseSumLabel.text = String(totalExpense.formattedWithSeparator)
+        initialBalance.text = String(balanceStatement.formattedWithSeparator)
     }
     
     func calculateIncome() {
